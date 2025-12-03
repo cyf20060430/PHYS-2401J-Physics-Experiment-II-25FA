@@ -1,0 +1,460 @@
+\documentclass[12pt, a4paper, oneside]{article}
+\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs,color}
+\usepackage{float}
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing 
+\begin{document}
+	
+	%\maketitle
+	\begin{center}
+	\rule{\textwidth}{1pt}\par
+	\vspace{5mm}
+	{\large\scshape SJTU Global College}\\[\baselineskip]
+	{\large\scshape Physics Laboratory}\\
+	(Vp241)
+	\rule{\textwidth}{1pt}\par
+	\vspace{4cm}
+	{\large\scshape Laboratory Report}\\[\baselineskip]
+	{\large\scshape Excercise 4}\\[\baselineskip]
+	{\large\scshape Ploarization of Light}\\[\baselineskip]
+	\end{center}	
+	\vspace{7cm}
+
+	\begin{tabular}{lll}
+		Name: 			Yifan Chen 	&	ID:524370910159	&Group:3\\
+		Date: {\today}	 			& 				&\\
+	\end{tabular}
+
+	
+	\rightline{\footnotesize[rev4.1]}
+	\pagebreak
+	
+	\section{Introduction}
+     The objective of this exercise is to understand some properties of light, in particular
+ to study the polarization phenomenon and verify Malus law, as well as to understand the
+ way half- and quarter-wave plates work in optical systems. Generation and detection of
+ elliptically and circularly polarized light will also be investigated.
+	
+	\section{Theoretical Background}
+
+Light is an electromagnetic wave in which the electric and magnetic fields oscillate perpendicular to the direction of propagation. This makes light a transverse wave. In natural light—emitted by typical sources—the electric field vectors fluctuate randomly in all directions within the plane perpendicular to the propagation direction. This randomness stems from the emission process itself. Such light is referred to as unpolarized. If the distribution of electric field directions is not uniform, the light is considered polarized.
+
+The study of polarization has played a key role in the development of wave optics and has led to a wide range of applications, including optical metrology, crystallography, and stress analysis.
+
+\subsection*{Polarization of Light}
+
+The electric field vector $\vec{E}$, often called the light vector in the context of visible electromagnetic waves, represents the time-varying electric field. Within the plane perpendicular to the direction of light propagation, this vector can oscillate in various directions. If the direction of oscillation remains fixed, the light is said to be linearly polarized, and the fixed direction is known as the polarization axis (see Figure~\ref{fig:linear}).
+
+If the electric field vector rotates around the propagation axis such that its tip traces a circle, the light is circularly polarized. If the tip traces an ellipse, the light is elliptically polarized (see Figure~\ref{fig:elliptical}).
+
+Natural light can be modeled as a statistical mixture of linearly polarized waves with equal amplitudes and random orientations. Light can also be partially polarized, meaning it contains both polarized and unpolarized components. The direction of the polarized component corresponds to the direction of maximum amplitude of the electric field.
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.5\linewidth]{T1.png}
+\caption{(a) Linearly polarized light with the polarization axis perpendicular to the page plane. (b) Linearly polarized light with the polarization axis parallel to the page plane.}
+\label{fig:linear}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+    \includegraphics[width=0.4\linewidth]{T2.png}
+\caption{Elliptically polarized light propagating in the $z$ direction. The light is polarized in the $xy$ plane.}
+\label{fig:elliptical}
+\end{figure}
+
+\subsection*{Polarizer}
+
+A polarizer is a device used to produce polarized light. It works based on the principle of dichroism, selectively absorbing light polarized in certain directions. Light polarized along the transmission axis of the polarizer passes through, while components in other directions are absorbed. As a result, unpolarized light becomes linearly polarized after passing through the polarizer.
+
+The same device can also be used to analyze the polarization state of incoming light. In this case, it is referred to as an analyzer.
+
+\subsection*{Malus' Law}
+
+One observable effect of polarization is the variation in light intensity after it passes through a polarizing system.
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.5\linewidth]{T3.png}
+\caption{Change in the brightness of the light depends on the mutual orientation of the polarizer and the analyzer.}
+\label{fig:malus}
+\end{figure}
+
+Consider two polarizers aligned such that their transmission axes form an angle $\theta$ (see Figure~\ref{fig:malus}). The first acts as a polarizer, and the second as an analyzer. The intensity of the light transmitted through the analyzer is given by Malus' Law:
+
+\begin{equation}
+I = I_0 \cos^2 \theta,
+\end{equation}
+
+where $I_0$ is the intensity of the light incident on the analyzer. This relationship, discovered by Étienne-Louis Malus in 1809, shows how the transmitted intensity depends on the angle between the polarizer and analyzer.
+
+If the incoming light is partially or elliptically polarized, the minimum transmitted intensity will not be zero. If the intensity remains unchanged regardless of the analyzer’s orientation, the light is either unpolarized or circularly polarized. Thus, a polarizer can be used to distinguish between different polarization states.
+
+\subsection*{Generation of Elliptically and Circularly Polarized Light: Half-Wave and Quarter-Wave Plates}
+
+When linearly polarized light enters a birefringent crystal plate with its surface parallel to the optical axis, it splits into two components: an extraordinary wave (e-wave) aligned with the optical axis and an ordinary wave (o-wave) perpendicular to it. These two components travel at different speeds, resulting in an optical path difference:
+
+\begin{equation}
+\Delta = (n_e - n_o) d,
+\end{equation}
+
+and a corresponding phase difference:
+
+\begin{equation}
+\delta = \frac{2\pi}{\lambda} (n_e - n_o) d,
+\end{equation}
+
+where $n_e$ and $n_o$ are the refractive indices for the extraordinary and ordinary rays, $d$ is the thickness of the plate, and $\lambda$ is the wavelength of the light.
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=0.5\linewidth]{T4.png}
+\caption{Linearly polarized light passing through a waveplate.}
+\label{fig:waveplate}
+\end{figure}
+
+As the light propagates through the crystal, the electric field components can be written as:
+
+\begin{align*}
+E_x &= A \cos \omega t, \\
+E_y &= A \cos(\omega t + \delta),
+\end{align*}
+
+with $A_e = A \cos \alpha$, $A_o = A \sin \alpha$. Eliminating time yields the general equation of an ellipse:
+
+\begin{equation}
+\left( \frac{E_y}{A_o} \right)^2 + \left( \frac{E_x}{A_e} \right)^2 - 2 \frac{E_x E_y}{A_e A_o} \cos \delta = \sin^2 \delta.
+\end{equation}
+
+Special cases include:
+
+- If $\Delta = k\lambda$ (i.e., $\delta = 0$), the light remains linearly polarized.
+- If $\Delta = (2k+1)\frac{\lambda}{2}$ (i.e., $\delta = \pi$), the polarization axis rotates by $2\alpha$. This is the condition for a half-wave plate.
+- If $\Delta = (2k+1)\frac{\lambda}{4}$ (i.e., $\delta = \frac{\pi}{2}$), the light becomes elliptically polarized. This defines a quarter-wave plate.
+
+If $A_e = A_o = A$, then:
+
+\begin{equation}
+E_x^2 + E_y^2 = A^2,
+\end{equation}
+
+which describes a circle, indicating circular polarization.
+
+The output polarization state depends on the angle $\alpha$ between the incident polarization and the optical axis:
+
+\begin{itemize}
+  \item $\alpha = 0$: linearly polarized light, axis parallel to the optical axis.
+  \item $\alpha = \frac{\pi}{2}$: linearly polarized light, axis perpendicular to the optical axis.
+  \item $\alpha = \frac{\pi}{4}$: circularly polarized light.
+  \item Other values: elliptically polarized light.
+\end{itemize}
+
+
+    \section{Measurement Setup and Procedure}
+
+\subsection*{Measurement Setup}
+
+\begin{itemize}
+  \item A linearly polarized light source is used as the initial beam.
+  \item The optical components are arranged sequentially on an optical bench: a polarizer, a wave plate (half-wave or quarter-wave), an analyzer, and a photodetector.
+  \item The polarizer sets the initial polarization direction of the light.
+  \item The wave plate introduces a phase shift between orthogonal components of the electric field.
+  \item The analyzer is used to measure the polarization state after modification by the wave plate.
+  \item A photodetector measures the transmitted light intensity, which is proportional to the electric current \( I \).
+  \item Angular positions of the polarizer, wave plates, and analyzer are adjustable and measured with a precision of 1°.
+\end{itemize}
+
+\subsection*{Procedure}
+
+\subsubsection*{1. Malus' Law Verification}
+\begin{itemize}
+  \item Fix the polarizer and rotate the analyzer from \( 0^\circ \) to \( 90^\circ \) in 5° increments.
+  \item Record the transmitted current \( I \) at each angle.
+  \item Determine the maximum current \( I_0 \) for normalization.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{S1.png}
+    \caption{Experimental setup for a demonstration of Malus law}
+\end{figure}
+\subsubsection*{2. Half-Wave Plate Experiment}
+\begin{itemize}
+  \item Insert the half-wave plate between the polarizer and analyzer.
+  \item Rotate the half-wave plate to angles from \( 0^\circ \) to \( 90^\circ \) in 10° steps.
+  \item For each angle, rotate the analyzer to find the angle of minimum transmitted intensity and record it.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{S2.png}
+    \caption{Experimental setup for the 1/2-wave plate}
+\end{figure}
+\subsubsection*{3. Quarter-Wave Plate Experiment}
+\begin{itemize}
+  \item Replace the half-wave plate with a quarter-wave plate.
+  \item Set the quarter-wave plate to rotation angles of \( 0^\circ, 20^\circ, 45^\circ, 70^\circ \).
+  \item For each setting, rotate the analyzer from \( 0^\circ \) to \( 350^\circ \) in 10° increments.
+  \item Record the transmitted current \( I \) at each angle and determine the maximum \( I_0 \).
+\end{itemize}
+
+
+	\section{Results}
+		\noindent Uncertainty of $\theta$ is 2$^\circ$.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{Maximum Electric Current $I_0 \pm$ \underline{\hspace{1cm}}} \\
+\hline
+$\theta$ & $I \pm$ 0.001[mW] & $\theta$ & $I \pm$ 0.001[mW] \\
+\hline
+0$^\circ$ &1.672 & 50$^\circ$ &0.691 \\
+\hline
+5$^\circ$ &1.660 & 55$^\circ$ &0.551 \\
+\hline
+10$^\circ$ &1.622 & 60$^\circ$ & 0.418\\
+\hline
+15$^\circ$ &1.560 & 65$^\circ$ & 0.299\\
+\hline
+20$^\circ$ &1.476 & 70$^\circ$ & 0.196\\
+\hline
+25$^\circ$ &1.373 & 75$^\circ$ & 0.112\\
+\hline
+30$^\circ$ &1.254 & 80$^\circ$ & 0.050 \\
+\hline
+35$^\circ$ & 1.122& 85$^\circ$ & 0.012\\
+\hline
+40$^\circ$ & 0.981& 90$^\circ$ & 0.001\\
+\hline
+45$^\circ$ &0.837& & \\
+\hline
+\end{tabular}
+\caption{TMeasurement data Malus' law demonstration.}
+\end{table}
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|}
+\hline
+Rotation angle of the 1/2-wave plate & Rotation angle of the analyzer [$^\circ$] $\pm$ 2 [$^\circ$] \\
+\hline
+initial & 0\\
+\hline
+10$^\circ$ & 22\\
+\hline
+20$^\circ$ & 40\\
+\hline
+30$^\circ$ & 60\\
+\hline
+40$^\circ$ & 84\\
+\hline
+50$^\circ$ & 100\\
+\hline
+60$^\circ$ & 120\\
+\hline
+70$^\circ$ & 146\\
+\hline
+80$^\circ$ & 158\\
+\hline
+90$^\circ$ & 178\\
+\hline
+\end{tabular}
+\caption{Measurement data for the 1/2-wave plate.}
+\end{table}
+
+\begin{table}[H]
+\centering
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{Rotation angle of 1/4-wave plate: 0$^\circ$} \\
+\hline
+\multicolumn{4}{|c|}{Maximum Electric Current $I_0 \pm$ 0.001[mW]}\\
+\hline
+$\theta$ & $I \pm$ 0.001[mW] & $\theta$ & $I \pm$ 0.001[mW]\\
+\hline
+0$^\circ$ & 0.001& 180$^\circ$ & 0.002\\
+\hline
+10$^\circ$ &0.040 & 190$^\circ$ & 0.042\\
+\hline
+20$^\circ$ &0.131 & 200$^\circ$ & 0.140\\
+\hline
+30$^\circ$ &0.281 & 210$^\circ$ & 0.286\\
+\hline
+40$^\circ$ &0.441 & 220$^\circ$ & 0.447\\
+\hline
+50$^\circ$ & 0.601& 230$^\circ$ & 0.606\\
+\hline
+60$^\circ$ &0.757 & 240$^\circ$ & 0.758\\
+\hline
+70$^\circ$ & 0.882& 250$^\circ$ & 0.891\\
+\hline
+80$^\circ$ &0.933& 260$^\circ$ & 0.935\\
+\hline
+90$^\circ$ &0.940 & 270$^\circ$ & 0.939\\
+\hline
+100$^\circ$ &0.889 & 280$^\circ$ & 0.891\\
+\hline
+110$^\circ$ & 0.796& 290$^\circ$ & 0.797\\
+\hline
+120$^\circ$ & 0.678& 300$^\circ$ & 0.679\\
+\hline
+130$^\circ$ & 0.510& 310$^\circ$ & 0.512\\
+\hline
+140$^\circ$ & 0.380& 320$^\circ$ & 0.381\\
+\hline
+150$^\circ$ & 0.226& 330$^\circ$ & 0.225\\
+\hline
+160$^\circ$ & 0.108& 340$^\circ$ & 0.108\\
+\hline
+170$^\circ$ &0.024 & 350$^\circ$ & 0.024\\
+\hline
+\end{tabular}
+\caption{Measurement data for the 1/4-wave plate (rotation angle 0$^\circ$).}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c}
+\hline
+\multicolumn{2}{|c|}{Rotation angle of the 1/4-wave plate: 70$^\circ$} \\
+\hline
+$I$ [mW] $\pm$ 0.001[mW]  & 0.153, 0.957, 0.168, 1.099\\
+\hline
+$\theta$ [$^\circ$] $\pm$ 2[$^\circ$] & 24, 100, 195, 296 \\
+\hline
+\end{tabular}
+\caption{Measurement data for the 1/4-wave plate (rotation angle 70$^\circ$).}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{Rotation angle of 1/4-wave plate: 20$^\circ$} \\
+\hline
+\multicolumn{4}{|c|}{Maximum Electric Current $I_0$ [mW] $\pm$ 0.001[mW] }\\
+\hline
+$\theta$ & $I $ [mW] $\pm$ 0.001[mW] & $\theta$ & $I$ [mW] $ \pm$ 0.001[mW] \\
+\hline
+0$^\circ$ & 0.225& 180$^\circ$ &0.231 \\
+\hline
+10$^\circ$ & 0.346& 190$^\circ$ &0.349 \\
+\hline
+20$^\circ$ & 0.447& 200$^\circ$ & 0.478\\
+\hline
+30$^\circ$ & 0.604& 210$^\circ$ & 0.610\\
+\hline
+40$^\circ$ & 0.718& 220$^\circ$ & 0.720\\
+\hline
+50$^\circ$ &0.782 & 230$^\circ$ & 0.778\\
+\hline
+60$^\circ$ &0.842 & 240$^\circ$ & 0.841\\
+\hline
+70$^\circ$ &0.856 & 250$^\circ$ & 0.850\\
+\hline
+80$^\circ$ &0.793 & 260$^\circ$ & 0.790\\
+\hline
+90$^\circ$ & 0.709& 270$^\circ$ & 0.719\\
+\hline
+100$^\circ$ & 0.596& 280$^\circ$ & 0.596\\
+\hline
+110$^\circ$ &0.468 & 290$^\circ$ & 0.471\\
+\hline
+120$^\circ$ & 0.361& 300$^\circ$ & 0.362\\
+\hline
+130$^\circ$ &0.247 & 310$^\circ$ & 0.248\\
+\hline
+140$^\circ$ & 0.247& 320$^\circ$ & 0.190\\
+\hline
+150$^\circ$ &0.176 & 330$^\circ$ & 0.131\\
+\hline
+160$^\circ$ &0.129 & 340$^\circ$ & 0.121\\
+\hline
+170$^\circ$ &0.164& 350$^\circ$ & 0.159\\
+\hline
+\end{tabular}
+\caption{Measurement data for the 1/4-wave plate (rotation angle 20$^\circ$).}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{4}{|c|}{Rotation angle of 1/4-wave plate: 45$^\circ$} \\
+\multicolumn{4}{|c|}{Maximum Electric Current $I_0$ [mW] $ \pm$ 0.001[mW]} \\
+\hline
+$\theta$ & $I$ [mW] $ \pm$  0.001[mW] & $\theta$ & $I$ [mW] $ \pm$  0.001[mW] \\
+\hline
+0$^\circ$ &0.629 & 180$^\circ$ & 0.631\\
+\hline
+10$^\circ$ &0.610 & 190$^\circ$ & 0.612\\
+\hline
+20$^\circ$ &0.581 & 200$^\circ$ & 0.590\\
+\hline
+30$^\circ$ & 0.529& 210$^\circ$ &0.533 \\
+\hline
+40$^\circ$ &0.488 & 220$^\circ$ & 0.491\\
+\hline
+50$^\circ$ & 0.453& 230$^\circ$ & 0.473\\
+\hline
+60$^\circ$ & 0.437& 240$^\circ$ &0.437 \\
+\hline
+70$^\circ$ & 0.425& 250$^\circ$ & 0.427\\
+\hline
+80$^\circ$ & 0.417& 260$^\circ$ & 0.419\\
+\hline
+90$^\circ$ & 0.417& 270$^\circ$ & 0.417\\
+\hline
+100$^\circ$ & 0.434& 280$^\circ$ & 0.433\\
+\hline
+110$^\circ$ &0.454 & 290$^\circ$ & 0.454\\
+\hline
+120$^\circ$ &0.485 & 300$^\circ$ & 0.490\\
+\hline
+130$^\circ$ &0.526 & 310$^\circ$ & 0.533\\
+\hline
+140$^\circ$ & 0.590& 320$^\circ$ & 0.597\\
+\hline
+150$^\circ$ &0.611 & 330$^\circ$ & 0.619\\
+\hline
+160$^\circ$ &0.644 & 340$^\circ$ & 0.651\\
+\hline
+170$^\circ$ & 0.674& 350$^\circ$ & 0.677\\
+\hline
+\end{tabular}
+\caption{Measurement data for the 1/4-wave plate (rotation angle 45$^\circ$).}
+\end{table}
+         
+	\section{Conclusions and discussion}
+	
+	
+	\pagebreak
+	\appendix 
+	\section{Signatured Datasheet}
+	\begin{figure}[H]
+	    \centering
+	    \includegraphics[width=1\linewidth]{D1.png}
+	\end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{D2.png}
+    \end{figure}
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{D3.png}
+    \end{figure}
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{D4.png}
+    \end{figure}
+        \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{D5.png}
+    \end{figure}
+    \newpage
+    \section{Supplementary Materials}
+    \subsection{Code Used}
+\end{document}
