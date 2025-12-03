@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.12.3)  4 DEC 2025 02:43
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.12.3)  4 DEC 2025 03:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -288,31 +288,31 @@ File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
 ) (./Lab_4_Report.aux)
 \openout1 = `Lab_4_Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-Package hyperref Info: Link coloring OFF on input line 7.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+Package hyperref Info: Link coloring OFF on input line 8.
  (./Lab_4_Report.out) (./Lab_4_Report.out)
 \@outlinefile=\write3
 \openout3 = `Lab_4_Report.out'.
@@ -352,15 +352,15 @@ Package hyperref Info: Link coloring OFF on input line 7.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 24.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
@@ -381,7 +381,21 @@ File: S1.png Graphic file (type bmp)
 <S1.png>
 File: S2.png Graphic file (type bmp)
 <S2.png>
- [6] [7] [8] [9] [10]
+ [6] [7] [8]
+File: F2.png Graphic file (type bmp)
+<F2.png>
+ [9]
+File: F1.png Graphic file (type bmp)
+<F1.png>
+ [10]
+File: F3.png Graphic file (type bmp)
+<F3.png>
+File: F4.png Graphic file (type bmp)
+<F4.png>
+ [11]
+File: F5.png Graphic file (type bmp)
+<F5.png>
+ [12] [13]
 File: D1.png Graphic file (type bmp)
 <D1.png>
 File: D2.png Graphic file (type bmp)
@@ -390,24 +404,24 @@ File: D3.png Graphic file (type bmp)
 <D3.png>
 File: D4.png Graphic file (type bmp)
 <D4.png>
- [11]
+ [14]
 File: D5.png Graphic file (type bmp)
 <D5.png>
- [12] [13] [14] [15] (./Lab_4_Report.aux)
+ [15] [16] [17] (./Lab_4_Report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Lab_4_Report.out' has not changed.
-(rerunfilecheck)             Checksum: EEF4569F9934FD4635E281A7D056BE14;1138.
+(rerunfilecheck)             Checksum: 4D82D9193E7840D001EEFC6110E541FD;1323.
  ) 
 Here is how much of TeX's memory you used:
- 10328 strings out of 476402
- 157612 string characters out of 5792947
+ 10375 strings out of 476402
+ 158183 string characters out of 5792947
  1941627 words of memory out of 5000000
- 32121 multiletter control sequences out of 15000+600000
+ 32163 multiletter control sequences out of 15000+600000
  566401 words of font info for 75 fonts, out of 8000000 for 9000
  286 hyphenation exceptions out of 8191
  72i,12n,79p,568b,401s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Lab_4_Report.pdf (15 pages).
+Output written on Lab_4_Report.pdf (17 pages).

@@ -4,6 +4,7 @@
 \usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage{setspace}
 \onehalfspacing 
+
 \begin{document}
 	
 	%\maketitle
@@ -429,7 +430,74 @@ $\theta$ & $I$ [mW] $ \pm$  0.001[mW] & $\theta$ & $I$ [mW] $ \pm$  0.001[mW] \\
 \end{table}
          
 	\section{Conclusions and discussion}
-	
+	\subsection{Malus' law}
+  The plot of Malus' Law is shown as figure below.
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{F2.png}
+    \caption{Original Data Points \& Regressed Line of Malus' Law}
+  \end{figure}
+The plot of normalized intensity $\frac{I}{I_0}$ versus $\cos^2\theta$ shows a nearly perfect linear relationship:
+
+
+\[
+\frac{I}{I_0} \approx \cos^2\theta.
+\]
+
+
+This confirms Malus' Law, as the transmitted intensity depends on the square of the cosine of the angle between the polarizer and analyzer. The straight-line fit demonstrates that the experimental data agrees well with theory, with extinction at $\theta = 90^\circ$.
+\subsection{Half-Wave Plate}
+The plot of the Half-Wave Plate is shown in the figure below.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{F1.png}
+    \caption{Original Data Points \& Regressed Half-Wave Plate line}
+  \end{figure}
+The graph of analyzer angle $\Delta\theta$ versus half-wave plate angle $\theta$ is linear with slope close to 2:
+
+
+\[
+\Delta\theta \approx 2\theta.
+\]
+
+This indicates that the half-wave plate rotates the polarization axis by twice its own rotation angle, consistent with theoretical predictions.
+\subsection{Quarter-Wave Plate Experiment}
+The three occasions for the QWP experiment is shown as the figure below.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{F3.png}
+    \caption{0 degree occasion}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{F4.png}
+    \caption{20 degree occasion}
+  \end{figure}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{F5.png}
+    \caption{45 degree occasion}
+  \end{figure}
+Polar plots of $\frac{I}{I_0}$ versus analyzer angle $\theta$ reveal the following:
+\begin{itemize}
+    \item At $0^\circ$ plate angle, the plot shows a two-lobed pattern, indicating linearly polarized light.
+    \item At $20^\circ$ plate angle, the plot forms an ellipse, corresponding to elliptically polarized light. The minima are non-zero, showing incomplete extinction.
+    \item At $45^\circ$ plate angle, the plot is nearly circular, indicating circular polarization. The intensity is almost independent of analyzer angle.
+\end{itemize}
+
+\paragraph{For Comparison of $20^\circ$ and $70^\circ$ Plate Angles}
+
+
+Both settings produce elliptically polarized light, but with different ellipse orientations and eccentricities:
+\begin{itemize}
+    \item At $20^\circ$, the ellipse is relatively symmetric, with smoother modulation and moderate eccentricity.
+    \item At $70^\circ$, the ellipse is more eccentric and rotated, with unequal maxima and deeper modulation contrast.
+\end{itemize}
+
+Thus, the $20^\circ$ case represents a more balanced elliptical polarization, while the $70^\circ$ case shows stronger asymmetry and rotation of the polarization ellipse.
+
 	
 	\pagebreak
 	\appendix 
@@ -454,7 +522,4 @@ $\theta$ & $I$ [mW] $ \pm$  0.001[mW] & $\theta$ & $I$ [mW] $ \pm$  0.001[mW] \\
         \centering
         \includegraphics[width=1\linewidth]{D5.png}
     \end{figure}
-    \newpage
-    \section{Supplementary Materials}
-    \subsection{Code Used}
-\end{document}
+  \end{document}
